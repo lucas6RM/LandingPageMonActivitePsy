@@ -14,6 +14,43 @@ body {
  
 }
 
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+
 
 :root {
   
@@ -22,6 +59,9 @@ body {
   --apple-blue: #0088FF;
   --light-blue: #D3F0FF;
   --light-purple: #F1E6FF;
+  --light-gray: #F8F8F8;
+  --medium-blue: #86d7ff;
+  --medium-purple: #caa1ff;
 
   --transparent-gray: hsla(0, 0%, 46%, 0.1);
 
@@ -30,6 +70,16 @@ body {
     var(--light-blue) 0%,
     var(--light-purple) 100%
     );
+
+    --medium-blue-to-medium-purple-gradient: linear-gradient(
+    90deg,
+    var(--medium-blue) 0%,
+    var(--medium-purple) 100%
+    );
+
+  --card-border-radius: 60px;
+  --icon-border-radius: 10px;
+  --box-shadow-custom: 0px 2px 2px lightgray;
 }
 
 button.primary {
@@ -37,7 +87,39 @@ button.primary {
   padding: 1.5% 2%;
   border: 0;
   background: var(--apple-blue);
-  color: white;
+  color: var(--secondary-color);
   border-radius: 50px;
+}
 
+button.primary:active {
+  background: var(--secondary-color);
+  color: var(--apple-blue);
+}
+
+button.secondary {
+  font-weight: 600;
+  padding: 1.5% 2%;
+  border: 0;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50px;
+}
+
+button.secondary:active {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.card {
+  padding: 5%;
+  border: 0;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow-custom);
+  box-sizing: border-box;
+  margin-top: 10%;
+}
+
+
+.card:hover{
+  background: var(--light-blue-to-light-purple-gradient);
 }
