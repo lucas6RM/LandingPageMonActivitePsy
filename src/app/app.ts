@@ -5,10 +5,11 @@ import { Fonctionalities } from "./fonctionalities/fonctionalities";
 import { SecurityAndData } from "./security-and-data/security-and-data";
 import { Costs } from "./costs/costs";
 import { Reviews } from "./reviews/reviews";
+import { GetStarted } from "./get-started/get-started";
 
 @Component({
   selector: 'app-root',
-  imports: [Hero, Fonctionalities, SecurityAndData, Costs, Reviews],
+  imports: [Hero, Fonctionalities, SecurityAndData, Costs, Reviews, GetStarted],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
