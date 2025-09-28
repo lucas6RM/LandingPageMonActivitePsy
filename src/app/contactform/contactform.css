@@ -1,0 +1,62 @@
+.contact-content{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 40px;
+}
+
+h3 {
+ color: var(--apple-blue);
+}
+
+.contact-form{
+ width: 30em;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+ border: solid lightgray 1px;
+ border-radius: 20px;
+ padding: 5%;
+}
+
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 2%;
+  box-sizing: border-box;
+  font-family: var(--apple-font);
+  font-size: 0.6rem;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: solid var(--apple-blue) 2px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  resize: none;
+  padding: 2%;
+  box-sizing: border-box;
+  font-family: var(--apple-font);
+  font-size: 0.6rem;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  outline: none;
+  border: solid var(--apple-blue) 2px;
+}
+
+button {
+  align-self: center;
+  padding: 2% 3%;
+}

@@ -1,0 +1,16 @@
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  
+  span {
+    color: var(--apple-blue);
+  };
+
+  h3 {
+    line-height: 30px;
+  }  
+}
