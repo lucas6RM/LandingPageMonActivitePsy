@@ -1,3 +1,8 @@
+/* Desktop */
+.burger-menu {
+  display: none;
+}
+
 .hero-container {
   width: 90%;
   max-width: 1000px;
@@ -11,7 +16,9 @@
   border-radius: 60px;
   gap:80px;
   margin-top: 1%;
+
 }
+
 
 .card-content{
   display: flex;
@@ -46,8 +53,6 @@
 .iphone-screenshots img {
  width: 300px;
  padding: 1%;
- image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
 }
 
 .iphone-screenshots {
@@ -73,6 +78,7 @@
   border: solid var(--transparent-gray) 1px;
   border-radius: 100px;
 
+
 }
 
 .logo-container {
@@ -88,10 +94,13 @@
     font-size: 1em;
     font-weight: 800;
   }
+
   .navbar-container img {
     width: 5em;
     height: auto;
   }
+
+
 
   .nav-picker {
     min-width: 60%;
@@ -108,6 +117,7 @@
     line-height: 1em;
     max-lines: 1;
     box-sizing: border-box;
+
   }
 
   a {
@@ -128,3 +138,53 @@
     border-radius: 50px;
     box-sizing: border-box;
   }
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .burger-menu {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 3%;
+  }
+
+  .navbar-container {
+    justify-content: space-evenly;
+    gap: 10%;
+    padding: 5%;
+    button.primary {
+      display: none;
+    }
+  }
+
+  .logo-container {
+    width: 80%;
+    font-size: 1.2em;
+    img {
+      width: 30%;
+    }
+  }
+
+  .nav-picker {
+    display: none; /* caché par défaut */
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background: var(--light-blue-to-light-purple-gradient);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+
+  .nav-picker.show {
+    display: flex; /* affiché quand menuOpen = true */
+  }
+
+
+}

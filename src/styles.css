@@ -6,7 +6,7 @@
 
 
 :root {
-  
+
   --primary-color: #000000;
   --secondary-color: #FFFFFF;
   --apple-blue: #0088FF;
@@ -44,6 +44,11 @@ body {
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -68,7 +73,6 @@ h4 {
   font-weight: 400;
   text-align: center;
 }
-
 
 h6 {
   font-size: 0.8rem;
@@ -141,4 +145,11 @@ h2.gradient-text {
   align-items: center;
   box-sizing: border-box;
   gap:80px;
+
+  @media screen and (max-width: 480px){
+    width: 95%; /* plutôt que 90% si besoin */
+    padding: 2%; /* réduire le padding pour ne pas dépasser */
+    margin-inline: auto;
+    box-sizing: border-box; /* assure que le padding n’augmente pas la largeur */
+  }
 }

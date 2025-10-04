@@ -4,7 +4,12 @@
        <img src="logo_mon_activite_psy.svg" alt="">
         <p>Mon Activité Psy</p>
     </div>
-    <div class="nav-picker">
+
+      <button class="burger-menu" aria-label="Menu" (click)="toggleMenu()">
+        ☰
+      </button>
+
+    <div class="nav-picker" [class.show]="menuOpen">
         <a href="#heroId">Accueil</a>
         <a href="#fonctionalitiesId">Fonctionnalités</a>
         <a href="#costsId">Tarifs</a>
@@ -13,11 +18,11 @@
         <a href="#contactId">Contact</a>
     </div>
     <button class="primary">Telecharger</button>
-    </div>   
+    </div>
     <div class="card-content">
         <h1>L’app iOS simple et sécurisée pour gérer vos séances et patients.</h1>
         <h6>Enregistrez vos séances en quelques secondes, suivez vos revenus et gardez une vue d’ensemble sur votre activité de psychologue.</h6>
-        
+
         <button class="secondary">
             <img src="logo_apple.svg" alt="apple icon">
             Télécharger pour iOS
@@ -27,5 +32,5 @@
             <img src="iphone_home_dark.svg" alt="apple icon">
         </div>
     </div>
-    
+
 </div>

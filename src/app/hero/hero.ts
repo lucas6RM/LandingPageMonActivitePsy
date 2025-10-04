@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './hero.css'
 })
 export class Hero {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
 }
