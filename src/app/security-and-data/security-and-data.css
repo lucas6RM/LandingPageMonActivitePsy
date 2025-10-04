@@ -26,8 +26,12 @@
     text-align: start;
   };
 
-
   box-shadow: var(--box-shadow-custom);
+  @media screen and (max-width: 480px) {
+    padding:  10%;
+    width: 90%;
+    gap: 50px;
+  }
 }
 
 img {
@@ -74,15 +78,28 @@ img {
   align-items: flex-start;
   gap: 10px;
 
+
+
+
+
+}
+
+button {
+  align-self: flex-end;
+  margin-top: 2%;
+
+}
+
+button a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 480px) {
   button {
-    align-self: flex-end;
-    margin-top: 2%;
-  }
 
-  button a{
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--secondary-color);
+    align-self: center;
+    padding: 5%;
   }
-
 }

@@ -186,5 +186,13 @@
     display: flex; /* affiché quand menuOpen = true */
   }
 
+  .iphone-screenshots {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+  }
 
 }
